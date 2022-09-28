@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url:  jdbc:h2:../../db
+    #   url: jdbc:h2:file:/www/wwwroot/qushuiying/db
+ #   url: jdbc:h2:file:D:\Desktop\微信小程序去水印\后端\ToolApi-main\db
+    username: root123aa
+    password: 123456abc
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+      settings:
+        web-allow-others: true
+        trace: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+server:
+  port: 10521
+wx:
+  appId: wxc9fb482cb9dc1432
+  secret: 50aaa2c86e582699e20578f97c8e38c1
+logging:
+  file:
+    name: toolApi.log
+
+
